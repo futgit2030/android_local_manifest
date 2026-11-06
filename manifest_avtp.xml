@@ -11,5 +11,8 @@
     <copyfile src="libavtp/examples/aaf-talker2.c" dest="external/libavtp/examples/aaf-talker2.c" />
     <copyfile src="alsa-lib/config.h" dest="external/alsa-lib/include/config.h" />
     <copyfile src="alsa-plugins/Android.bp.alsa-plugins" dest="external/alsa-plugins/Android.bp" />
+    <copyfile src="libavtp/avtp/Android.bp.tsn" dest="device/brcm/rpi5/avtp/Android.bp" />
+    <copyfile src="libavtp/avtp/tsn-setup.sh" dest="device/brcm/rpi5/avtp/tsn-setup.sh" />
+    <copyfile src="libavtp/avtp/init.avtp.rc" dest="device/brcm/rpi5/avtp/init.avtp.rc" />
   </project>
 </manifest>
