@@ -31,6 +31,9 @@ curl -o .repo/local_manifests/manifest_avtp.xml -L https://raw.githubusercontent
 repo sync
 ```
 
+Traffic Shaping / tc Patch
+siehe [patches](https://github.com/futgit2030/aaos-config/blob/a17_avb/patches/patch_tc.sh)
+
 5. Setup Android build environment:
 
 ```
