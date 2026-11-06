@@ -18,10 +18,10 @@ clone and removing unneeded projects:
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.0_r1 --depth=1
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/manifest_brcm_rpi.xml --create-dirs
-curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/remove_projects.xml
-curl -o .repo/local_manifests/manifest_utilities.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/manifest_utilities.xml
-curl -o .repo/local_manifests/manifest_ptp_avtp.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/manifest_ptp_avtp.xml
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/remove_projects.xml
+curl -o .repo/local_manifests/manifest_utilities.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_utilities.xml
+curl -o .repo/local_manifests/manifest_ptp_avtp.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_ptp_avtp.xml
 ```
 
 4. Sync source code:
@@ -38,7 +38,7 @@ repo sync
 
 6. Step 1: Linux Kernel:
 
-Also look into [Linux kernel build instructions](https://github.com/loebelch/android_kernel_manifest/tree/android-17.0).
+Also look into [Linux kernel build instructions](https://github.com/futgit2030/android_kernel_manifest/tree/a17_avb).
 
 
 6. Step 2: Select the device (`rpi5`) and build target (`car` for Android Automotive):
