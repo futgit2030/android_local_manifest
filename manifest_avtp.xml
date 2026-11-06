@@ -2,7 +2,7 @@
 <manifest>
   <remote name="github" fetch="https://github.com/" />
   <project path="external/libavtp" name="Avnu/libavtp" remote="github" revision="master" />
-  <project path="external/alsa-plugins" name="alsa-project/alsa-plugins" remote="github" revision="refs/tags/v1.2.12" />
+  <project path="external/alsa-plugins" name="futgit2030/alsa-plugins" remote="github" revision="a17_avb" />
   <project path="aaos-config_avtp" name="futgit2030/aaos-config" remote="github" revision="a17_avb" >
     <copyfile src="libavtp/Android.bp.libavtp" dest="external/libavtp/Android.bp" />
     <copyfile src="libavtp/METADATA.libavtp" dest="external/libavtp/METADATA" />
