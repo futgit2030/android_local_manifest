@@ -21,7 +21,8 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.
 curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_brcm_rpi.xml --create-dirs
 curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/remove_projects.xml
 curl -o .repo/local_manifests/manifest_utilities.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_utilities.xml
-curl -o .repo/local_manifests/manifest_ptp_avtp.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_ptp_avtp.xml
+curl -o .repo/local_manifests/manifest_ptp.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_ptp.xml
+curl -o .repo/local_manifests/manifest_avtp.xml -L https://raw.githubusercontent.com/futgit2030/android_local_manifest/a17_avb/manifest_avtp.xml
 ```
 
 4. Sync source code:
