@@ -31,33 +31,34 @@ curl -o .repo/local_manifests/manifest_avtp.xml -L https://raw.githubusercontent
 repo sync
 ```
 
-Traffic Shaping / tc Patch
-siehe [patches](https://github.com/futgit2030/aaos-config/blob/a17_avb/patches/patch_tc.sh)
+5. Traffic Shaping / tc Patch
 
-5. Setup Android build environment:
+-> siehe [patches](https://github.com/futgit2030/aaos-config/blob/a17_avb/patches/patch_tc.sh)
+
+6. Setup Android build environment:
 
 ```
 . build/envsetup.sh
 ```
 
-6. Step 1: Linux Kernel:
+7. Step 1: Linux Kernel:
 
 Also look into [Linux kernel build instructions](https://github.com/futgit2030/android_kernel_manifest/tree/a17_avb).
 
 
-6. Step 2: Select the device (`rpi5`) and build target (`car` for Android Automotive):
+8. Step 2: Select the device (`rpi5`) and build target (`car` for Android Automotive):
 
 ```
 lunch aosp_rpi5_car-cp2a-userdebug
 ```
 
-7. Compile:
+9. Compile:
 
 ```
 make bootimage systemimage vendorimage -j$(nproc)
 ```
 
-8. Make flashable image for the device (`rpi5`):
+10. Make flashable image for the device (`rpi5`):
 
 ```
 ./rpi5-mkimg.sh
