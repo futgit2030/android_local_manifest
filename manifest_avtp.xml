@@ -14,5 +14,6 @@
     <copyfile src="libavtp/avtp/Android.bp.tsn" dest="device/brcm/rpi5/avtp/Android.bp" />
     <copyfile src="libavtp/avtp/tsn-setup.sh" dest="device/brcm/rpi5/avtp/tsn-setup.sh" />
     <copyfile src="libavtp/avtp/init.avtp.rc" dest="device/brcm/rpi5/avtp/init.avtp.rc" />
+    <copyfile src="libavtp/avtp.te" dest="device/brcm/rpi5/sepolicy/avtp.te" />
   </project>
 </manifest>
