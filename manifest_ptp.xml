@@ -6,5 +6,6 @@
     <copyfile src="linuxptp/Android.bp.linuxptp" dest="external/linuxptp/Android.bp" />
     <copyfile src="linuxptp/gptp.cfg" dest="device/brcm/rpi5/car/gptp.cfg" />
     <copyfile src="linuxptp/gptp.rc" dest="external/linuxptp/gptp.rc" />
+    <copyfile src="linuxptp/gptp.te" dest="device/brcm/rpi5/sepolicy/gptp.te" />
   </project>
 </manifest>
