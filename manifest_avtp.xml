@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/" />
+  <project path="external/libavtp" name="Avnu/libavtp" remote="github" revision="master" />
+  <project path="external/alsa-plugins" name="alsa-project/alsa-plugins" remote="github" revision="refs/tags/v1.2.12" />
+  <project path="aaos-config" name="futgit2030/aaos-config" remote="github" revision="a17_avb" >
+    <copyfile src="libavtp/Android.bp.libavtp" dest="external/libavtp/Android.bp" />
+    <copyfile src="libavtp/METADATA.libavtp" dest="external/libavtp/METADATA" />
+    <copyfile src="libavtp/android/argp.h" dest="external/libavtp/android/argp.h" />
+    <copyfile src="libavtp/android/argp.c" dest="external/libavtp/android/argp.c" />
+    <copyfile src="libavtp/examples/aaf-talker2.c" dest="external/libavtp/examples/aaf-talker2.c" />
+    <copyfile src="alsa-lib/config.h" dest="external/alsa-lib/include/config.h" />
+    <copyfile src="alsa-plugins/Android.bp.alsa-plugins" dest="external/alsa-plugins/Android.bp" />
+  </project>
+</manifest>
