@@ -46,19 +46,26 @@ repo sync
 Also look into [Linux kernel build instructions](https://github.com/futgit2030/android_kernel_manifest/tree/a17_avb).
 
 
-8. Step 2: Select the device (`rpi5`) and build target (`car` for Android Automotive):
+8. optional (if build already exists) - delete Images
+
+```
+rm -rf out/target/product/rpi5/rpiboot
+rm out/target/product/rpi5/boot.img
+```
+   
+9. Select the device (`rpi5`) and build target (`car` for Android Automotive):
 
 ```
 lunch aosp_rpi5_car-cp2a-userdebug
 ```
 
-9. Compile:
+10. Compile:
 
 ```
 make bootimage systemimage vendorimage -j$(nproc)
 ```
 
-10. Make flashable image for the device (`rpi5`):
+11. Make flashable image for the device (`rpi5`):
 
 ```
 ./rpi5-mkimg.sh
